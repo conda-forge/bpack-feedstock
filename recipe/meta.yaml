@@ -1,13 +1,13 @@
 {% set name = "bpack" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8eb165aa48b71f39a97f8b591c6c0aab6501c2fb12355e3783a2e23d3e53425d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 21aea88fed8956a33721e9fc60f51a1529f57fb65e20d2b687b20fb2fd803015
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python =3.9
     - pip
+    - setuptools
   run:
-    - python >=3.7
-    - typing-extensions
+    - python >=3.9
     - bitstruct
     - numpy
 
