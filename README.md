@@ -23,7 +23,7 @@ sequence of fields. Fields are characterized by a known size, offset
 The package provides classes and functions that can be used to:
 
 * describe binary data structures in a declarative way (structures can
-  be specified up to the bit level)
+be specified up to the bit level)
 * automatically generate encoders/decoders for a specified data descriptor
 
 Encoders/decoders (*backends*) rely on well known Python packages like:
@@ -32,7 +32,6 @@ Encoders/decoders (*backends*) rely on well known Python packages like:
 * bitstruct (optional)
 * numpy (optional)
 * bitarray (optional) - partial implementation
-
 
 Current build status
 ====================
